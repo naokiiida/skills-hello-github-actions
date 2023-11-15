@@ -18,6 +18,21 @@ _Create a GitHub Action and use it in a workflow._
   Start this step by acknowledging the previous step.
   Define terms and link to docs.github.com.
 -->
+```yaml
+name: learn-github-actions
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm install -g bats
+      - run: bats -v
+```
 
 ## Step 5: Trigger the workflow
 
@@ -29,6 +44,12 @@ Your new action will run any time a pull request has been opened.
 
 ![View an action's log](https://user-images.githubusercontent.com/16547949/62388049-4e64e600-b52a-11e9-8bf5-db0c5452360f.png)
 
+<!-- 
+  <<< User notes: review what you did >>>
+  - Added workflow to .github/workflows directory. 
+  - The workflow should have a name, jobs and steps
+-->
+  
 ### :keyboard: Activity: Trigger the workflow
 
 1. Make a new branch named `test-workflow`.
