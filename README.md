@@ -14,49 +14,37 @@ _Create a GitHub Action and use it in a workflow._
 </header>
 
 <!--
-  <<< Author notes: Step 5 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
+  <<< Author notes: Finish >>>
+  Review what we learned, ask for feedback, provide next steps.
 -->
-```yaml
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
-jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
-```
 
-## Step 5: Trigger the workflow
+## Finish
 
-_You've now got a fully functioning workflow! :smile:_
+_Congratulations friend, you've completed this course!_
 
-Your new action will run any time a pull request has been opened.
+<img src=https://octodex.github.com/images/jetpacktocat.png alt=celebrate width=300 align=right>
 
-**Seeing your _action_ in action**: The status of your action is shown in a pull request before you merge, look for **All checks have passed** when you try out the steps below. You can also view them from the **Actions** tab in your repository. From there, you will see all the actions that have run, and you can click on each action to view details and access log files.
+Here's a recap of all the tasks you've accomplished in your repository:
 
-![View an action's log](https://user-images.githubusercontent.com/16547949/62388049-4e64e600-b52a-11e9-8bf5-db0c5452360f.png)
+- You've created your first GitHub Actions workflow file.
+- You learned where to make your workflow file.
+- You created an event trigger, a job, and steps for your workflow.
+- You're ready to automate anything you can dream of.
 
 <!-- 
   <<< User notes: review what you did >>>
   - Added workflow to .github/workflows directory. 
   - The workflow should have a name, jobs and steps
 -->
-  
-### :keyboard: Activity: Trigger the workflow
 
-1. Make a new branch named `test-workflow`.
-1. Commit any change to your branch, such as adding an emoji to your README.md file.
-1. Create the pull request on your branch.
-1. See your action run on your pull request.
-1. Wait about 20 seconds for actions to run, then refresh this page (the one you're following instructions from) and an action will automatically close this step and open the next one.
+### What's next?
+
+- Learn more about GitHub Actions by reading "[Learn GitHub Actions](https://docs.github.com/actions/learn-github-actions)".
+- Use actions created by others in [awesome-actions](https://github.com/sdras/awesome-actions).
+- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/hello-github-actions).
+- [Take another GitHub Skills course](https://github.com/skills).
+- Learn more about GitHub by reading the "[Get started](https://docs.github.com/get-started)" docs.
+- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
 
 <footer>
 
