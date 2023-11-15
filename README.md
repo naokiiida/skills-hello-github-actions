@@ -31,6 +31,12 @@ Here's a recap of all the tasks you've accomplished in your repository:
 - You created an event trigger, a job, and steps for your workflow.
 - You're ready to automate anything you can dream of.
 
+<!-- 
+  <<< User notes: review what you did >>>
+  - Added workflow to .github/workflows directory. 
+  - The workflow should have a name, jobs and steps
+-->
+
 ### What's next?
 
 - Learn more about GitHub Actions by reading "[Learn GitHub Actions](https://docs.github.com/actions/learn-github-actions)".
